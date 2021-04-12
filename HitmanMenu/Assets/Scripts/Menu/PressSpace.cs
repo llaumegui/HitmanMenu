@@ -11,6 +11,9 @@ public class PressSpace : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SoundManager.PlaySound(SoundManager.Sound.ClickTab);
             Pressed.Invoke();
+        }
     }
 }

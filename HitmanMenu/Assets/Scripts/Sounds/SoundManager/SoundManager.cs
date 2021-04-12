@@ -16,6 +16,7 @@ public static class SoundManager
 		HoverButton,
 		ClickButton,
 		ClickTab,
+		Gunshot,
 	}
 
 	public static void PlayLoop(string name, Sound sound, float volume = 1f, bool isMusic = false, bool spacialized = false, Vector3 position = new Vector3(), float maxDistance = 100f)

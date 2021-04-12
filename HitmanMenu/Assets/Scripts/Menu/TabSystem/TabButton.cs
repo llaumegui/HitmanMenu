@@ -22,12 +22,13 @@ public class TabButton : MonoBehaviour, IPointerEnterHandler,IPointerClickHandle
     private void Awake()
     {
         Background = GetComponent<Image>();
-        Group.Subscribe(this);
+        //Group.Subscribe(this);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         Group.TabSelected(this);
+        SoundManager.PlaySound(SoundManager.Sound.ClickTab);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
